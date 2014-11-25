@@ -2,6 +2,7 @@ Ext.define('ThemeDemoApp.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
+        'ThemeDemoApp.container.Raw',
         'Ext.layout.container.Border',
         'Ext.window.MessageBox'
     ],
@@ -54,5 +55,13 @@ Ext.define('ThemeDemoApp.view.Main', {
         title: 'East',
         split: true,
         width: 150
+    }, {
+        // default UI
+        region: 'south',
+        xtype: 'rawcontainer',
+        title: 'South',
+        split: true,
+        height: 200,
+        html: '<h1>South</h1>'
     }]
 });
