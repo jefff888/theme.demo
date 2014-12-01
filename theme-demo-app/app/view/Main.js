@@ -2,7 +2,7 @@ Ext.define('ThemeDemoApp.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
-        'ThemeDemoApp.container.Raw',
+        'ThemeDemoApp.view.MyInformationTable',
         'Ext.layout.container.Border',
         'Ext.window.MessageBox'
     ],
@@ -58,10 +58,39 @@ Ext.define('ThemeDemoApp.view.Main', {
     }, {
         // default UI
         region: 'south',
-        xtype: 'rawcontainer',
+        xtype: 'tabpanel',
         title: 'South',
         split: true,
         height: 200,
         html: '<h1>South</h1>'
+        ,items: [{
+            cls: 'setup-myinformation'
+            ,title: 'My Information'
+            ,items: [{
+                xtype: 'component'
+                ,autoEl: 'header'
+                ,cls: 'panel-body-header'
+                ,html: '<h1>My Information</h1>'
+            },{
+                //xtype: 'setup-myinformationtable'
+                xtype: 'panel'
+                ,html: '<h3>My Information Panel</h3>'
+            }]
+        }
+/*
+        ,{
+            cls: 'setup-assumptions'
+            ,title: 'Assumptions'
+            ,items: [{
+                xtype: 'component'
+                ,autoEl: 'header'
+                ,cls: 'panel-body-header'
+                ,html: '<h1>Assumptions</h1>'
+            },{
+                xtype: 'setup-assumptiontable'
+            }]
+        }
+*/
+        ]
     }]
 });

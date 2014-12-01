@@ -869,8 +869,15 @@ Ext.ClassManager.addNameAlternateMappings({
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "MyCustomTheme.panel.Panel": [],
   "ThemeDemoApp.Application": [],
+  "ThemeDemoApp.container.Raw": [],
+  "ThemeDemoApp.container.table.FieldTable": [],
+  "ThemeDemoApp.container.table.Header": [],
+  "ThemeDemoApp.container.table.Row": [],
+  "ThemeDemoApp.container.table.Segment": [],
   "ThemeDemoApp.controller.Main": [],
+  "ThemeDemoApp.layout.container.Raw": [],
   "ThemeDemoApp.view.Main": [],
+  "ThemeDemoApp.view.MyInformationTable": [],
   "ThemeDemoApp.view.Viewport": []
 });
 
@@ -1888,9 +1895,30 @@ Ext.ClassManager.addNameAliasMappings({
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "MyCustomTheme.panel.Panel": [],
   "ThemeDemoApp.Application": [],
+  "ThemeDemoApp.container.Raw": [
+    "widget.rawcontainer"
+  ],
+  "ThemeDemoApp.container.table.FieldTable": [
+    "widget.fieldtable"
+  ],
+  "ThemeDemoApp.container.table.Header": [
+    "widget.tableheader"
+  ],
+  "ThemeDemoApp.container.table.Row": [
+    "widget.tablerow"
+  ],
+  "ThemeDemoApp.container.table.Segment": [
+    "widget.tablesegment"
+  ],
   "ThemeDemoApp.controller.Main": [],
+  "ThemeDemoApp.layout.container.Raw": [
+    "layout.raw"
+  ],
   "ThemeDemoApp.view.Main": [
     "widget.app-main"
+  ],
+  "ThemeDemoApp.view.MyInformationTable": [
+    "widget.setup-myinformationtable"
   ],
   "ThemeDemoApp.view.Viewport": []
 });
